@@ -72,7 +72,7 @@ if uploaded_file is not None:
         #st.write(text)
 
     list_of_prompts=['''Please provide a list of the extracurricular activities and hobbies of the candidate, which can include clubs, sports, volunteer work, or any other interests and activities they have been involved in.\
-    Based on the candidate's current extracurricular activities, please suggest additional extracurricular activities that may enhance their profile. Consider activities that demonstrate leadership, teamwork, community involvement, or skills development, and provide a brief description of each suggested activity.''']
+    Based on the candidate's current extracurricular activities, please suggest additional extracurricular activities that may enhance their profile. Consider activities that demonstrate leadership, teamwork, community involvement, or skills development, and provide a brief description of each suggested activity. and the resume is :-''']
     prompt_1=list_of_prompts[0] + text
     response = openai.Completion.create(
                    engine="text-davinci-002",
